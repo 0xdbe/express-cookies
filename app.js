@@ -24,7 +24,7 @@ app.use(Session({
     secret: secret,
     resave: false,
     saveUninitialized: false,
-    cookie:{path: '/', httpOnly: false, maxAge: 600000}
+    cookie:{path: '/', httpOnly: true, maxAge: 600000}
 }));
 
 // Create a default endpoint
